@@ -232,12 +232,7 @@ def updateResult(resulttemp, resultfile):
                     writer.writerow([int(imgid), int(classid), float(score)])
                     jdx +=1
     
-    needhave = len(os.listdir(rootPath))
-    toadd = needhave - len(tempresult)
-    tempresult = tempresult * 10
-    lis = [tempresult[i] for i in range(toadd)]
-    for line in lis:
-        writer.writerow(line)
+
    
     
 
